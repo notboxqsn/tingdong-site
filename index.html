@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>听懂 · Tingdong</title>
+<style>
+  :root { --teal:#0d7884; --bg:#f6f8f8; --ink:#1c2a2d; --muted:#5c6b6e; }
+  body { margin:0; font-family: -apple-system, "PingFang SC", "Helvetica Neue", Arial, sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+  header { background: linear-gradient(135deg,#33bfae,#0d7884); color:#fff; padding:48px 20px 40px; text-align:center; }
+  header img { width:96px; height:96px; border-radius:22px; box-shadow:0 8px 24px rgba(0,0,0,.25); }
+  h1 { margin:16px 0 6px; font-size:34px; }
+  .sub { opacity:.92; font-size:18px; margin:0; }
+  main { max-width:760px; margin:0 auto; padding:28px 20px 60px; }
+  section { background:#fff; border-radius:16px; padding:22px 24px; margin:18px 0; box-shadow:0 2px 10px rgba(0,0,0,.05); }
+  h2 { font-size:20px; margin:0 0 10px; color:var(--teal); }
+  p, li { color:var(--ink); } .muted { color:var(--muted); }
+  a { color:var(--teal); }
+  .lang { text-align:center; margin:14px 0 0; font-size:15px; }
+  .lang a { margin:0 8px; color:#fff; }
+  details summary { cursor:pointer; font-weight:600; margin:8px 0; }
+  footer { text-align:center; color:var(--muted); font-size:13px; padding:20px; }
+</style>
+</head>
+<body>
+<header>
+  <img src="icon.png" alt="听懂">
+  <h1>听懂 · Tingdong</h1>
+  <p class="sub">给爸妈的看病翻译</p>
+  <p class="lang"><a href="#zh">中文</a> · <a href="#en">English</a> · <a href="#fr">Français</a></p>
+</header>
+<main>
+  <section id="zh">
+    <h2>这是什么</h2>
+    <p>一个给老人用的面对面翻译 App。打开按「开始」,和医生、药剂师、店员正常说话,屏幕分成两半:下半屏给老人看大字,上半屏倒转过来给对方看。识别、翻译、朗读都在手机本地完成,语言包下载一次后离线可用,对话内容不上传。</p>
+    <ul>
+      <li>14 种语言:中文(简/繁/粤)、英、法、西、德、意、葡、日、韩、越、阿拉伯、俄</li>
+      <li>拍照翻译:药盒、信件、菜单,译文直接显示在原文位置</li>
+      <li>对话记录保存在手机上,带日期时间</li>
+      <li>听懂 Pro:AI 总结重点(用药、预约、注意事项)并加到日历。每台设备免费试用 90 天,之后 $0.99/月、$4.99/年或 $9.99 永久</li>
+    </ul>
+    <h2>常见问题</h2>
+    <details><summary>需要联网吗?</summary><p>翻译和朗读不需要。语音识别在 iOS 26 及以上完全本地;更早的系统有网时用苹果服务器识别,没网时自动用本地模型。第一次使用某种语言时需要联网下载语言包,设置里有「一键下载全部语言包」。</p></details>
+    <details><summary>AI 总结为什么不能用?</summary><p>AI 总结使用苹果的本地模型,需要支持 Apple Intelligence 的 iPhone(iPhone 15 Pro 或更新)和 iOS 26 以上。不支持的手机其他功能照常。</p></details>
+    <details><summary>对方怎么选自己的语言?</summary><p>倒转那半屏顶部有三个常用语言按钮和一个地球图标,对方点一下自己的语言即可。常用按钮会按地区和最近使用自动排。</p></details>
+    <details><summary>我的对话会被上传吗?</summary><p>不会。对话记录、照片和总结只存在这台手机上,删除 App 即全部删除。详见<a href="privacy.html">隐私政策</a>。</p></details>
+    <h2>联系我们</h2>
+    <p>支持邮箱:<a href="mailto:notbox.qsn@gmail.com">notbox.qsn@gmail.com</a></p>
+  </section>
+
+  <section id="en" lang="en">
+    <h2>What it is</h2>
+    <p>A face-to-face translator made for older people. Tap Start and talk normally with a doctor, pharmacist or clerk. The screen is split in two: large text for the elder below, and the other half flipped upside down for the person across the table. Recognition, translation and speech all run on the phone; language packs work offline after a one-time download, and nothing is uploaded.</p>
+    <ul>
+      <li>14 languages: Chinese (Simplified, Traditional, Cantonese), English, French, Spanish, German, Italian, Portuguese, Japanese, Korean, Vietnamese, Arabic, Russian</li>
+      <li>Photo translation for labels, letters and menus, drawn right where the original text is</li>
+      <li>Conversations saved on the phone with date and time</li>
+      <li>Tingdong Pro: AI summary (medications, appointments, warnings) and calendar export. Free for 90 days on every device, then $0.99/month, $4.99/year or $9.99 once</li>
+    </ul>
+    <h2>FAQ</h2>
+    <details><summary>Does it need internet?</summary><p>Not for translation or speech. Speech recognition is fully on-device on iOS 26 and later; older systems use Apple's servers when online and the on-device model when offline. Language packs are downloaded once; Settings has a one-tap download for all of them.</p></details>
+    <details><summary>Why is AI summary unavailable?</summary><p>It uses Apple's on-device model and needs an iPhone that supports Apple Intelligence (iPhone 15 Pro or newer) on iOS 26 or later. Everything else works on any supported phone.</p></details>
+    <details><summary>Is anything uploaded?</summary><p>No. Conversations, photos and summaries stay on this phone and are removed when the app is deleted. See the <a href="privacy.html">privacy policy</a>.</p></details>
+    <h2>Contact</h2>
+    <p>Support: <a href="mailto:notbox.qsn@gmail.com">notbox.qsn@gmail.com</a></p>
+  </section>
+
+  <section id="fr" lang="fr">
+    <h2>C'est quoi</h2>
+    <p>Un traducteur face à face conçu pour les personnes âgées. Touchez Démarrer et parlez normalement avec un médecin, un pharmacien ou un commis. L'écran est divisé en deux : du grand texte pour l'aîné en bas, et l'autre moitié retournée pour la personne en face. Reconnaissance, traduction et voix fonctionnent sur le téléphone ; les paquets de langue marchent hors ligne après un seul téléchargement, et rien n'est envoyé.</p>
+    <ul>
+      <li>14 langues : chinois (simplifié, traditionnel, cantonais), anglais, français, espagnol, allemand, italien, portugais, japonais, coréen, vietnamien, arabe, russe</li>
+      <li>Traduction photo des étiquettes, lettres et menus, affichée à l'endroit du texte original</li>
+      <li>Conversations conservées sur le téléphone avec date et heure</li>
+      <li>Tingdong Pro : résumé IA (médicaments, rendez-vous, mises en garde) et export vers le calendrier. Gratuit 90 jours sur chaque appareil, puis 0,99 $/mois, 4,99 $/an ou 9,99 $ à vie</li>
+    </ul>
+    <h2>Questions fréquentes</h2>
+    <details><summary>Faut-il Internet ?</summary><p>Pas pour la traduction ni la voix. La reconnaissance vocale est entièrement locale sur iOS 26 et plus ; les systèmes plus anciens utilisent les serveurs d'Apple en ligne et le modèle local hors ligne. Les paquets de langue se téléchargent une fois ; les Réglages offrent un téléchargement en un geste.</p></details>
+    <details><summary>Pourquoi le résumé IA n'est pas disponible ?</summary><p>Il utilise le modèle local d'Apple et nécessite un iPhone compatible Apple Intelligence (iPhone 15 Pro ou plus récent) sous iOS 26 ou plus. Tout le reste fonctionne sur tout téléphone pris en charge.</p></details>
+    <details><summary>Quelque chose est-il envoyé ?</summary><p>Non. Conversations, photos et résumés restent sur ce téléphone et disparaissent avec l'app. Voir la <a href="privacy.html">politique de confidentialité</a>.</p></details>
+    <h2>Contact</h2>
+    <p>Soutien : <a href="mailto:notbox.qsn@gmail.com">notbox.qsn@gmail.com</a></p>
+  </section>
+</main>
+<footer>© 2026 Origin Innovation Lab Inc. · <a href="privacy.html">隐私政策 / Privacy / Confidentialité</a></footer>
+</body>
+</html>
