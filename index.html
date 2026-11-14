@@ -19,6 +19,11 @@
   .lang { text-align:center; margin:14px 0 0; font-size:15px; }
   .lang a { margin:0 8px; color:#fff; }
   details summary { cursor:pointer; font-weight:600; margin:8px 0; }
+  .shots { display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding:6px 2px 12px; margin:14px -4px 6px; }
+  .shots figure { flex:0 0 170px; margin:0; scroll-snap-align:start; text-align:center; }
+  .shots img { width:100%; border-radius:18px; box-shadow:0 4px 14px rgba(0,0,0,.14); display:block; }
+  .shots figcaption { font-size:13px; color:var(--muted); margin-top:8px; line-height:1.4; }
+  @media (min-width:740px) { .shots { overflow:visible; } .shots figure { flex:1 1 0; } }
   footer { text-align:center; color:var(--muted); font-size:13px; padding:20px; }
 </style>
 </head>
@@ -37,8 +42,14 @@
       <li>14 种语言：中文（简/繁/粤）、英、法、西、德、意、葡、日、韩、越、阿拉伯、俄</li>
       <li>拍照翻译：药盒、信件、菜单，译文直接显示在原文位置</li>
       <li>对话和照片记录保存在手机上，带日期时间和地点，可在地图上回看</li>
-      <li>听懂 Pro:AI 总结重点（用药、预约、注意事项）并加到日历。每台设备免费试用 90 天，之后 $0.99/月、$4.99/年或 $9.99 永久</li>
+      <li>听懂 Pro：AI 总结重点（用药、预约、注意事项）并加到日历。每台设备免费试用 90 天，之后 $0.99/月、$4.99/年或 $9.99 永久</li>
     </ul>
+    <div class="shots">
+      <figure><img src="shots/zh-1.jpg" alt="听懂截图 1" loading="lazy"><figcaption>问路、点菜，面对面说话就行</figcaption></figure>
+      <figure><img src="shots/zh-2.jpg" alt="听懂截图 2" loading="lazy"><figcaption>拍菜单，译文直接盖在原文上</figcaption></figure>
+      <figure><img src="shots/zh-3.jpg" alt="听懂截图 3" loading="lazy"><figcaption>走过哪儿、说过什么，地图上回看</figcaption></figure>
+      <figure><img src="shots/zh-4.jpg" alt="听懂截图 4" loading="lazy"><figcaption>看病记录 AI 总结：用药、复查一目了然</figcaption></figure>
+    </div>
     <h2>常见问题</h2>
     <details><summary>需要联网吗？</summary><p>翻译和朗读不需要。语音识别在 iOS 26 及以上完全本地；更早的系统有网时用苹果服务器识别，没网时自动用本地模型。第一次使用某种语言时需要联网下载语言包，设置里有「一键下载全部语言包」。</p></details>
     <details><summary>AI 总结为什么不能用？</summary><p>AI 总结使用苹果的本地模型，需要支持 Apple Intelligence 的 iPhone(iPhone 15 Pro 或更新）和 iOS 26 以上。不支持的手机其他功能照常。</p></details>
@@ -57,6 +68,12 @@
       <li>Conversations and photos saved on the phone with date, time and place, shown on a map</li>
       <li>Tingdong Pro: AI summary (medications, appointments, warnings) and calendar export. Free for 90 days on every device, then $0.99/month, $4.99/year or $9.99 once</li>
     </ul>
+    <div class="shots">
+      <figure><img src="shots/en-1.jpg" alt="Tingdong screenshot 1" loading="lazy"><figcaption>Ask the way, order food: just talk</figcaption></figure>
+      <figure><img src="shots/en-2.jpg" alt="Tingdong screenshot 2" loading="lazy"><figcaption>Snap a menu, read it in your language</figcaption></figure>
+      <figure><img src="shots/en-3.jpg" alt="Tingdong screenshot 3" loading="lazy"><figcaption>Every place and conversation on a map</figcaption></figure>
+      <figure><img src="shots/en-4.jpg" alt="Tingdong screenshot 4" loading="lazy"><figcaption>AI summary of a doctor visit: medicines, follow-ups</figcaption></figure>
+    </div>
     <h2>FAQ</h2>
     <details><summary>Does it need internet?</summary><p>Not for translation or speech. Speech recognition is fully on-device on iOS 26 and later; older systems use Apple's servers when online and the on-device model when offline. Language packs are downloaded once; Settings has a one-tap download for all of them.</p></details>
     <details><summary>Why is AI summary unavailable?</summary><p>It uses Apple's on-device model and needs an iPhone that supports Apple Intelligence (iPhone 15 Pro or newer) on iOS 26 or later. Everything else works on any supported phone.</p></details>
@@ -74,6 +91,12 @@
       <li>Conversations et photos conservées sur le téléphone avec date, heure et lieu, visibles sur une carte</li>
       <li>Tingdong Pro : résumé IA (médicaments, rendez-vous, mises en garde) et export vers le calendrier. Gratuit 90 jours sur chaque appareil, puis 0,99 $/mois, 4,99 $/an ou 9,99 $ à vie</li>
     </ul>
+    <div class="shots">
+      <figure><img src="shots/fr-1.jpg" alt="Capture d'écran Tingdong 1" loading="lazy"><figcaption>Demander son chemin, commander : parlez simplement</figcaption></figure>
+      <figure><img src="shots/fr-2.jpg" alt="Capture d'écran Tingdong 2" loading="lazy"><figcaption>Photographiez un menu, lisez-le dans votre langue</figcaption></figure>
+      <figure><img src="shots/fr-3.jpg" alt="Capture d'écran Tingdong 3" loading="lazy"><figcaption>Chaque lieu et conversation sur une carte</figcaption></figure>
+      <figure><img src="shots/fr-4.jpg" alt="Capture d'écran Tingdong 4" loading="lazy"><figcaption>Résumé IA d'une consultation : médicaments, rendez-vous</figcaption></figure>
+    </div>
     <h2>Questions fréquentes</h2>
     <details><summary>Faut-il Internet ?</summary><p>Pas pour la traduction ni la voix. La reconnaissance vocale est entièrement locale sur iOS 26 et plus ; les systèmes plus anciens utilisent les serveurs d'Apple en ligne et le modèle local hors ligne. Les paquets de langue se téléchargent une fois ; les Réglages offrent un téléchargement en un geste.</p></details>
     <details><summary>Pourquoi le résumé IA n'est pas disponible ?</summary><p>Il utilise le modèle local d'Apple et nécessite un iPhone compatible Apple Intelligence (iPhone 15 Pro ou plus récent) sous iOS 26 ou plus. Tout le reste fonctionne sur tout téléphone pris en charge.</p></details>
